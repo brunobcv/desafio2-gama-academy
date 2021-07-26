@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
+	<title>Cadastrar Clientes - Gama Store</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="form">
+
+			<h1>Cadastrar Cliente</h1>
+
+			<div id="msgError"></div>
+			<div id="msgSuccess"></div>
+
+			<div class="label-float">
+				<input type="text" inputmode="text" id="nome" placeholder="" required>
+				<label id="labelNome" for="nome">Nome</label>
+			</div>
+
+			<div class="label-float">
+				<input type="email" id="email" placeholder="" required>
+				<label id="labelEmail" for="email">E-mail</label>
+			</div>
+
+			<div class="label-float">
+				<input type="phone" id="telefone" placeholder="" required>
+				<label id="labelTelefone" for="telefone">Telefone</label>
+			</div>
+
+			<div class="label-float">
+				<input type="text" inputmode="text" id="endereco" placeholder="" required>
+				<label id="labelEndereco" for="endereco">Endereço</label>
+			</div>
+
+			<div class="label-float">
+				<input type="text" inputmode="text" id="bairro" placeholder="" required>
+				<label id="labelBairro" for="bairro">Bairro</label>
+			</div>
+
+			<div class="label-float">
+				<input type="text" inputmode="text" id="cep" placeholder="" required>
+				<label id="labelCep" for="cep">CEP</label>
+			</div>
+
+			<div class="label-float">
+				<input type="text" inputmode="text" id="cidade" placeholder="" required>
+				<label id="labelCidade" for="cidade">Cidade</label>
+			</div>
+
+			<div class="label-float">
+				<input type="text" inputmode="text" id="estado" placeholder="" required>
+				<label id="labelEstado" for="estado">Estado</label>
+			</div>
+
+			<div class="justify-center">
+				<button onclick="cadastrarCliente()">Cadastar</button>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+    <p>
+      Made by Bruno César - Hiring Coders - Gama Academy
+    </p>
+  </footer>
+
+	<script src="./scripts/cadastro-cliente.js"></script>
+
+</body>
+</html>

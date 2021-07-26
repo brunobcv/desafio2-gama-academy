@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/style.css">
+	<title>Cadastrar Produtos - Gama Store</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="form">
+
+			<h1>Cadastrar Produto</h1>
+
+			<div id="msgError"></div>
+			<div id="msgSuccess"></div>
+
+			<div class="label-float">
+				<input type="text" inputmode="text" id="produto" placeholder="" required>
+				<label id="labelProduto" for="produto">Produto</label>
+			</div>
+
+			<div class="label-float">
+				<input type="text" id="categoria" placeholder="" required>
+				<label id="labelCategoria" for="categoria">Categoria</label>
+			</div>
+
+			<div class="label-float">
+				<input type="number" id="preco" placeholder="" required>
+				<label id="labelPreco" for="preco">Preço</label>
+			</div>
+
+			<div class="label-float">
+				<input type="number" id="quantidade" placeholder="" required>
+				<label id="labelQuantidade" for="quantidade">Quantidade</label>
+			</div>
+
+			<div class="label-float">
+				<textarea rows="5" inputmode="text" id="descricao" placeholder="" required></textarea>
+				<label id="labelDescricao" for="descricao">Descrição</label>
+			</div>
+
+			<div class="justify-center">
+				<button onclick="cadastrarProduto()">Cadastar</button>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+    <p>
+      Made by Bruno César - Hiring Coders - Gama Academy
+    </p>
+  </footer>
+
+	<script src="./scripts/cadastro-produto.js"></script>
+</body>
+</html>
